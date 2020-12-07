@@ -28,5 +28,9 @@ public class CalculatorTest {
     void shouldReturnNumbersSeperated() {
         assertEquals(calculator.add("1,2"), 3);
     }
+    @Test
+    void shouldReturnNumbersSeperatedWithNewLine() {
+        assertEquals(calculator.add("1\n2,3"), 6);
+    }
 
 }
